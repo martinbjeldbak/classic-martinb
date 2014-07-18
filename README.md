@@ -2,9 +2,9 @@
 
 A simple Octopress theme. I made some edits to the original classic theme to slim it down a little and add different navigation links.
 
-![classic-martinb](/classic-martinb.png)
+![classic-martinb theme screenshot](/classic-martinb.png)
 
-## Install
+## Installation
 
 ```shell
 $ cd octopress
@@ -14,6 +14,9 @@ $ rake generate
 ```
 
 If using zsh, there might by globbing issues running `$ rake install['classic-martinb']`, running `$ rake "install[classic-martinb]"` might be required.
+
+## Customization
+You will want to change the text in the footer and right sidebar. These files, among others you may want modify, can be found in the `source/_includes/custom/` directory.
 
 ## License
 (The MIT License)
