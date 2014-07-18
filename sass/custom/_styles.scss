@@ -1,0 +1,106 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+
+@mixin rounded($topBot, $side, $radius: 10px) {
+  border-#{$topBot}-#{$side}-radius: $radius;
+  -moz-border-#{$topBot}-radius-#{$side}: $radius;
+  -webkit-border-#{$topBot}-#{$side}-radius: $radius;
+}
+
+body > header {
+  padding-bottom: 0;
+  padding-top: 0;
+  background:url('/images/escheresque.png');
+  h1 > a:hover {
+    color: $head-hov-color;
+  }
+
+  // Left hand side of the header
+  div.header-left {
+    float:left;
+    width:$header-left-width;
+    padding-top: $header-padding-top;
+    padding-bottom: $header-padding-bottom;
+
+    div.subtitle {
+      padding-left: 2%;
+    }
+  }
+
+  // Right hand side of the header
+  // -The navigation menu has been moved from under the header
+  // to residing inside it
+  div.header-right {
+    overflow: auto;
+    font-size: $nav-font-size;
+    ul.main-navigation {
+      float:left;
+      display: inline;
+      margin-top: 5%;
+      
+      div.spacer {
+        height: 7px;
+        border-left: 2px solid $nav-bgcolor;      
+      }
+      div.selected {
+        background-color: $nav-bgcolor;
+        @include rounded(top, right);
+        @include rounded(bottom, right);
+        display: inline;
+        padding: {
+          bottom: 3px;
+          top: 3px;
+        }
+        a {
+          color: $head-hov-color;
+        }
+      }
+      li {
+        list-style: none;
+        border-left: 2px solid $nav-bgcolor;
+        display: inline;
+        padding: 3px 15px;
+        a {
+          text-decoration: none;
+          color: #f2f2f2;
+          width: 100%;
+        }
+        &:hover {
+          background-color: $nav-bgcolor;
+          @include rounded(top, right);
+          @include rounded(bottom, right);
+          a {
+            color: $head-hov-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Adding a seperator between the header and content
+body > div#main {
+  div#head-sep {
+    width: $max-width;
+    height:$header-sep-height;
+    background-color:$header-sep-color;
+  }
+
+  div.sidebar-social {
+    display: inline;
+    a {
+      white-space: normal;
+    }
+    a:hover {
+      opacity: 0.75;
+    }
+    img {
+      width: 40px;
+      border: none;
+      border-radius: 0;
+      -webkit-box-shadow: rgba(0, 0, 0, 0) 0 0px;
+      -moz-box-shadow: rgba(0, 0, 0, 0) 0 0px;
+    }
+  }
+}
