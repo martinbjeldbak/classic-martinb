@@ -6,7 +6,7 @@ A simple Octopress theme. I made some edits to the original classic theme to sli
 
 ## Install
 
-``shell
+```shell
 $ cd octopress
 $ git clone git://github.com/fapper/classic-martinb.git .themes/classic-martinb
 $ rake install['classic-martinb']
