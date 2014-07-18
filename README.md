@@ -15,9 +15,6 @@ $ rake generate
 
 If using zsh, there might by globbing issues running `$ rake install['classic-martinb']`, running `$ rake "install[classic-martinb]"` might be required.
 
-## Customization
-You will want to change the text in the footer and right sidebar. These files, among others you may want modify, can be found in the `source/_includes/custom/` directory.
-
 ## License
 (The MIT License)
 
