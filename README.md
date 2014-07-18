@@ -8,7 +8,7 @@ A simple Octopress theme. I made some edits to the original classic theme to sli
 
 ```shell
 $ cd octopress
-$ git clone git://github.com/fapper/classic-martinb.git .themes/classic-martinb
+$ git submodule add git://github.com/fapper/classic-martinb.git .themes/classic-martinb
 $ rake install['classic-martinb']
 $ rake generate
 ```
