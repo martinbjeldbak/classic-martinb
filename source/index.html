@@ -21,6 +21,8 @@ layout: default
   </div>
 </div>
 <aside class="sidebar">
+  {% include asides/about.html %}
+  {% include asides/recent_posts.html %}
   {% if site.blog_index_asides.size %}
     {% include_array blog_index_asides %}
   {% else %}
