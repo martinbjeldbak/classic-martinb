@@ -4,7 +4,7 @@ $max-width: 100% !default;
 $pad-min: 18px !default;
 $pad-narrow: 25px !default;
 $pad-medium: 35px !default;
-$pad-wide: 55px !default;
+$pad-wide: 200px !default;
 
 // Sidebar widths used in media queries
 $sidebar-width-medium: 240px !default;
@@ -12,11 +12,11 @@ $sidebar-pad-medium: 15px !default;
 $sidebar-pad-wide: 20px !default;
 $sidebar-width-wide: 300px !default;
 
-$indented-lists: false !default;
+$indented-lists: true !default;
 
 $header-font-size: 1em !default;
-$header-padding-top: 1.5em !default;
-$header-padding-bottom: 1.5em !default;
+$header-padding-top: 1em !default;
+$header-padding-bottom: 1em !default;
 
 .group { @include pie-clearfix; }
 
