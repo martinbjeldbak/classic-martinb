@@ -1,6 +1,23 @@
-// This File is imported last, and will override other styles in the cascade
-// Add styles here to make changes without digging in too much
+// Navbar
+$head-hov-color: #9E0000;
+$nav-bgcolor: #F2F2F2;
+$nav-font-size: 0.7em;
 
+$header-padding-top: 1em;
+$header-padding-bottom: 1em;
+$max-width: 100%;
+
+// Sidebar widths used in media queries
+$sidebar-width-medium: 240px;
+$sidebar-pad-medium: 15px;
+$sidebar-pad-wide: 20px;
+$sidebar-width-wide: 300px;
+
+// Header
+$header-left-width: 50%;
+$header-sep-color: #FFFFFF;
+$header-sep-height: 10px;
+$header-sep-color: #888;
 
 @mixin rounded($topBot, $side, $radius: 10px) {
   border-#{$topBot}-#{$side}-radius: $radius;
@@ -79,6 +96,23 @@ body > header {
   }
 }
 
+div.social-icons {
+  display: inline;
+  a {
+    white-space: normal;
+  }
+  a:hover {
+    opacity: 0.75;
+  }
+  img {
+    width: 40px;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0) 0 0px;
+  }
+}
+
 // Adding a seperator between the header and content
 body > div#main {
   div#head-sep {
@@ -87,20 +121,4 @@ body > div#main {
     background-color:$header-sep-color;
   }
 
-  div.sidebar-social {
-    display: inline;
-    a {
-      white-space: normal;
-    }
-    a:hover {
-      opacity: 0.75;
-    }
-    img {
-      width: 40px;
-      border: none;
-      border-radius: 0;
-      -webkit-box-shadow: rgba(0, 0, 0, 0) 0 0px;
-      -moz-box-shadow: rgba(0, 0, 0, 0) 0 0px;
-    }
-  }
 }
