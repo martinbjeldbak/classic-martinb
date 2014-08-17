@@ -16,7 +16,7 @@ $ rake generate
 If using zsh, there might by globbing issues running `$ rake install['classic-martinb']`, running `$ rake "install[classic-martinb]"` might be required.
 
 ## Caveats
-To get social icons for LinkedIn and Facebook, add the variables ``facebook_user`` and ``linkedin_user`` with corresponding values to your ``_config.yml`` file, as per PR fapper/classic-martinb#2.
+To get social icons for LinkedIn and Facebook, add the variables ``facebook_user`` and ``linkedin_user`` with corresponding values to your ``_config.yml`` file, as per PR [fapper/classic-martinb#2](https://github.com/fapper/classic-martinb/pull/2).
 
 ## License
 (The MIT License)
