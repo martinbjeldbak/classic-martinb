@@ -15,8 +15,8 @@ $ rake generate
 
 If using zsh, there might by globbing issues running `$ rake install['classic-martinb']`, running `$ rake "install[classic-martinb]"` might be required.
 
-## Customization
-You will want to change the text in the footer and right sidebar. These files, among others you may want modify, can be found in the `source/_includes/custom/` directory.
+## Caveats
+To get social icons for LinkedIn and Facebook, add the variables ``facebook_user``and ``linkedin_user`` with corresponding variables to your ``_config.yml`` file, as per PR #2.
 
 ## License
 (The MIT License)
