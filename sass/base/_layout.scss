@@ -4,7 +4,7 @@ $max-width: 100% !default;
 $pad-min: 18px !default;
 $pad-narrow: 25px !default;
 $pad-medium: 35px !default;
-$pad-wide: 200px !default;
+$pad-wide: 150px !default;
 
 // Sidebar widths used in media queries
 $sidebar-width-medium: 240px !default;
@@ -62,7 +62,7 @@ body {
     }
     @media only screen and (min-width: 992px) {
       padding-left: $pad-wide;
-      padding-right: $pad-wide;
+      padding-right: $pad-wide/3;
     }
   }
   div.pagination {
