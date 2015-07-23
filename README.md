@@ -1,6 +1,6 @@
 # classic-martinb
 
-A simple Octopress theme. I made some edits to the original classic theme to slim it down a little and add different navigation links.
+A simple Octopress theme. I made some edits to the original classic theme to slim it down a little and add different navigation links. It also includes [font-awesome](http://fortawesome.github.io/Font-Awesome/). You can load any of its icons by simply pasting the HTML for an icon into the desired HTML file.
 
 ![classic-martinb theme screenshot](/classic-martinb.png)
 
@@ -8,7 +8,7 @@ A simple Octopress theme. I made some edits to the original classic theme to sli
 
 ```shell
 $ cd octopress
-$ git submodule add git://github.com/fapper/classic-martinb.git .themes/classic-martinb
+$ git submodule add git://github.com/martinbjeldbak/classic-martinb.git .themes/classic-martinb
 $ rake install['classic-martinb']
 $ rake generate
 ```
@@ -16,7 +16,7 @@ $ rake generate
 If using zsh, there might by globbing issues running `$ rake install['classic-martinb']`, running `$ rake "install[classic-martinb]"` might be required.
 
 ## Caveats
-To get social icons for LinkedIn and Facebook, add the variables ``facebook_user`` and ``linkedin_user`` with corresponding values to your ``_config.yml`` file, as per PR [fapper/classic-martinb#2](https://github.com/fapper/classic-martinb/pull/2).
+To get social icons for LinkedIn and Facebook, add the variables ``facebook_user`` and ``linkedin_user`` with corresponding values to your ``_config.yml`` file, as per PR [martinbjeldbak/classic-martinb#2](https://github.com/martinbjeldbak/classic-martinb/pull/2).
 
 ## License
 (The MIT License)
