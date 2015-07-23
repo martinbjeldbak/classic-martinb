@@ -94,13 +94,12 @@ div.social-icons {
   a:hover {
     opacity: 0.75;
   }
-  img {
-    width: 40px;
-    border: none;
-    border-radius: 0;
-    -webkit-box-shadow: rgba(0, 0, 0, 0) 0 0px;
-    -moz-box-shadow: rgba(0, 0, 0, 0) 0 0px;
+  a:visited {
+    color: black;
   }
+  a > i {
+    padding: 5px;
+}
 }
 
 // Adding a seperator between the header and content
